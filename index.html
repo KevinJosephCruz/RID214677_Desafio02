@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Tarefas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Board de tarefas</h1>
+  </header>
+
+
+  <main>
+
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Nome da tarefa" required />
+      <select id="task-label">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="ux">UX</option>
+      </select>
+      <button type="submit">+</button>
+    </form>
+
+    <section id="task-list">
+
+    </section>
+
+    <footer>
+      <p id="completed-counter">0 tarefas concluídas</p>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
